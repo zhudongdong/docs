@@ -211,7 +211,8 @@ Exchangers -->> DubboProtocol:NettyServer
 
 ```mermaid
 graph LR
-A(appendProperties) --> B(resolveFile if needed) 
+Z((start))-->A[appendProperties]
+A--> B(resolveFile if needed) 
 B-->C(appendParameters to map)
 C-->D(build url from map)
 D-->E{isInJVM?}
@@ -220,5 +221,5 @@ F--> G(ProxyFactroy.createProxy)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTE1Njg2OTNdfQ==
+eyJoaXN0b3J5IjpbLTQ3MDI4OTEwMV19
 -->
