@@ -150,7 +150,7 @@ DubboProtocol-->> Protocol$Adaptive:exporter
 Protocol$Adaptive-->> RegistryProtocol:exporter
 RegistryProtocol->>Registry&Adaptive:register()
 RegistryProtocol->>Registry&Adaptive:subscribe()
-RegistryProtocol->>ServiceConfig:exporter
+RegistryProtocol-->>ServiceConfig:exporter
 
 ```
 
@@ -163,6 +163,9 @@ HeaderExchanger ->> Transporters:bind()
 Note right of Transporters:take NettyTransporter for example
 Transporters ->> NettyTransporter:bind()
 NettyTransporter -->> Transporters:NettyServer
+Transporters -->> HeaderExchanger:NettyServer
+HeaderExchanger -->> HeaderExchanger:NettyServer
+Transporters -->> HeaderExchanger:NettyServer
 ```
 
 >- ServiceConfig.doExportUrlsFor1Protocol
@@ -194,5 +197,5 @@ NettyTransporter -->> Transporters:NettyServer
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MjY0NzA2MF19
+eyJoaXN0b3J5IjpbLTUxODE0ODk3Ml19
 -->
