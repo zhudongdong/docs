@@ -143,8 +143,8 @@ wrapper按照配置文件中定义，层层嵌套（没有循序），以Protoco
 
 ```mermaid
 sequenceDiagram
-ServiceConfig ->> RegistryProtocol: Hello Bob, how are you?
-Bob-->>John: How about you John?
+ServiceConfig ->> RegistryProtocol: export
+RegistryProtocol->>Protocol$Adaptive: export
 Bob--x Alice: I am good thanks!
 Bob-x John: I am good thanks!
 Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
@@ -182,5 +182,5 @@ Alice->John: Yes... John, how are you?
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2NjQyNjAwMl19
+eyJoaXN0b3J5IjpbLTE3NDQ3NzE3MDNdfQ==
 -->
