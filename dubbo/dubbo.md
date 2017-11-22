@@ -157,6 +157,8 @@ RegistryProtocol->>ServiceConfig:exporter
 ```mermaid
 sequenceDiagram
 DubboProtocol ->> DubboProtocol: openServer()
+DubboProtocol ->> DubboProtocol: createServer()
+
 RegistryProtocol->>Protocol$Adaptive: export
 Protocol$Adaptive->> DubboProtocol: export
 DubboProtocol-->> Protocol$Adaptive:exporter
@@ -196,5 +198,5 @@ RegistryProtocol->>ServiceConfig:exporter
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzIwNjkzNTldfQ==
+eyJoaXN0b3J5IjpbMTkyOTU4MTg5Nl19
 -->
