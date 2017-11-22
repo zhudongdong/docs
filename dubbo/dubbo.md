@@ -151,11 +151,7 @@ Protocol$Adaptive-->> RegistryProtocol:exporter
 RegistryProtocol->>Registry&Adaptive:register
 RegistryProtocol->>Registry&Adaptive:subscribe
 RegistryProtocol->>ServiceConfig:exporter
-Bob-x John: I am good thanks!
-Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
 
-Bob-->Alice: Checking with John...
-Alice->John: Yes... John, how are you?
 ```
 
 >- ServiceConfig.doExportUrlsFor1Protocol
@@ -187,5 +183,5 @@ Alice->John: Yes... John, how are you?
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMzY3NDQ0N119
+eyJoaXN0b3J5IjpbMTA5NTEyNTEyM119
 -->
