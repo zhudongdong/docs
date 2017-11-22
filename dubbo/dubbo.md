@@ -210,11 +210,11 @@ Exchangers -->> DubboProtocol:NettyServer
 -----------
 ```mermaid
 graph LR
-A[Ref] -- Link text --> B((Circle))
+A[ReferenceConfig.get] -- Link text --> B((Circle))
 A --> C(Round Rect)
 B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzIxODk0OThdfQ==
+eyJoaXN0b3J5IjpbMTI4NzI3OTc1Ml19
 -->
