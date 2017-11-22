@@ -206,15 +206,16 @@ Exchangers -->> DubboProtocol:NettyServer
 
 #  reference
 
-整体流程
+初始化过程
 -----------
+
 ```mermaid
 graph LR
-A[ReferenceConfig.get] --> B((Circle))
+A[appendProperties] --> B((Circle))
 A --> C(Round Rect)
 B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mjc4Mzc1MDVdfQ==
+eyJoaXN0b3J5IjpbLTUwMzgyMDExMF19
 -->
