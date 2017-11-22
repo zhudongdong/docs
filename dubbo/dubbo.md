@@ -165,7 +165,7 @@ Transporters ->> NettyTransporter:bind()
 NettyTransporter -->> Transporters:NettyServer
 Transporters -->> HeaderExchanger:NettyServer
 HeaderExchanger -->> Exchangers:NettyServer
-Transporters -->> HeaderExchanger:NettyServer
+Exchangers -->> DubboProtocol:NettyServer
 ```
 
 >- ServiceConfig.doExportUrlsFor1Protocol
@@ -197,5 +197,5 @@ Transporters -->> HeaderExchanger:NettyServer
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMjA0NzgwOF19
+eyJoaXN0b3J5IjpbMTkxMjU0MjE5NV19
 -->
