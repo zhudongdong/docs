@@ -208,21 +208,22 @@ Exchangers -->> DubboProtocol:NettyServer
 
 初始化过程
 -----------
-
 ```mermaid
-graph LR
+graph TD
 Z((start))-->A[appendProperties]
 A--> B(resolveFile if needed) 
 B-->C(appendParameters to map)
 C-->D(build url from map)
+
 D-->E{isInJVM?}
 E--YES-->F(InJvmProtocol.refer)
 F--> G(ProxyFactroy.createProxy)
 G-->H((End))
 E--NO-->I(RegistryProtocol.refer)
+I-->G
 
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzQ4NjM0NF19
+eyJoaXN0b3J5IjpbMTI2ODI3NDI2XX0=
 -->
