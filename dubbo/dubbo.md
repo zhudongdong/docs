@@ -209,18 +209,12 @@ Exchangers -->> DubboProtocol:NettyServer
 整体流程
 -----------
 ```mermaid
-sequenceDiagram
-DubboProtocol ->> DubboProtocol: createServer()
-DubboProtocol ->> Exchangers:bind()
-Exchangers ->> HeaderExchanger:bind()
-HeaderExchanger ->> Transporters:bind()
-Note right of Transporters:take NettyTransporter for example
-Transporters ->> NettyTransporter:bind()
-NettyTransporter -->> Transporters:NettyServer
-Transporters -->> HeaderExchanger:NettyServer
-HeaderExchanger -->> Exchangers:NettyServer
-Exchangers -->> DubboProtocol:NettyServer
+graph LR
+A[Ref] -- Link text --> B((Circle))
+A --> C(Round Rect)
+B --> D{Rhombus}
+C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTUxNjc3NzBdfQ==
+eyJoaXN0b3J5IjpbLTE3NzIxODk0OThdfQ==
 -->
