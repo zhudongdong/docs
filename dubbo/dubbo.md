@@ -211,11 +211,11 @@ Exchangers -->> DubboProtocol:NettyServer
 
 ```mermaid
 graph LR
-A[appendProperties] --> B((Circle))
+A[appendProperties] --> B[resolveFile if needed]
 A --> C(Round Rect)
 B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMzgyMDExMF19
+eyJoaXN0b3J5IjpbLTE4NDY0NzA3MTBdfQ==
 -->
