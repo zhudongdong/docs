@@ -164,7 +164,7 @@ Note right of Transporters:take NettyTransporter for example
 Transporters ->> NettyTransporter:bind()
 NettyTransporter -->> Transporters:NettyServer
 Transporters -->> HeaderExchanger:NettyServer
-HeaderExchanger -->> HeaderExchanger:NettyServer
+HeaderExchanger -->> Exchangers:NettyServer
 Transporters -->> HeaderExchanger:NettyServer
 ```
 
@@ -197,5 +197,5 @@ Transporters -->> HeaderExchanger:NettyServer
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxODE0ODk3Ml19
+eyJoaXN0b3J5IjpbMTUxMjA0NzgwOF19
 -->
