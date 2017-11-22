@@ -150,7 +150,7 @@ DubboProtocol-->> Protocol$Adaptive:exporter
 Protocol$Adaptive-->> RegistryProtocol:exporter
 RegistryProtocol->>Registry&Adaptive:register
 RegistryProtocol->>Registry&Adaptive:subscribe
-RegistryProtocol->>
+RegistryProtocol->>ServiceConfig:exporter
 Bob-x John: I am good thanks!
 Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
 
@@ -187,5 +187,5 @@ Alice->John: Yes... John, how are you?
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzMxNTg0NDVdfQ==
+eyJoaXN0b3J5IjpbMTMzMzY3NDQ0N119
 -->
