@@ -159,6 +159,8 @@ sequenceDiagram
 DubboProtocol ->> DubboProtocol: createServer()
 DubboProtocol ->> Exchangers:bind()
 Exchangers ->> HeaderExchanger:bind()
+HeaderExchanger ->> Transporters:bind()
+Note right of HeaderExchanger:dd
 ```
 
 >- ServiceConfig.doExportUrlsFor1Protocol
@@ -190,5 +192,5 @@ Exchangers ->> HeaderExchanger:bind()
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTE2NjgxMzhdfQ==
+eyJoaXN0b3J5IjpbMTAwMDI4ODgzN119
 -->
