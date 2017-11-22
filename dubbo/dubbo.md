@@ -141,6 +141,18 @@ wrapper按照配置文件中定义，层层嵌套（没有循序），以Protoco
 
 # dubbo export
 
+```mermaid
+sequenceDiagram
+ServiceConfig ->> RegistryProtocol: Hello Bob, how are you?
+Bob-->>John: How about you John?
+Bob--x Alice: I am good thanks!
+Bob-x John: I am good thanks!
+Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
+
+Bob-->Alice: Checking with John...
+Alice->John: Yes... John, how are you?
+```
+
 >- ServiceConfig.doExportUrlsFor1Protocol
 >> 根据服务提供的url遍历所有注册中心的地址，进行export
 
@@ -170,5 +182,5 @@ wrapper按照配置文件中定义，层层嵌套（没有循序），以Protoco
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg0MDM1OTEwXX0=
+eyJoaXN0b3J5IjpbLTY2NjQyNjAwMl19
 -->
