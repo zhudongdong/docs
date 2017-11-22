@@ -139,7 +139,7 @@ wrapper按照配置文件中定义，层层嵌套（没有循序），以Protoco
 
 >- 缓存extension
 
-# dubbo export
+# export
 
 整体链路
 ----------
@@ -204,7 +204,23 @@ Exchangers -->> DubboProtocol:NettyServer
 >>>- return exporter
 
 
+#  reference
 
+整体流程
+-----------
+```mermaid
+sequenceDiagram
+DubboProtocol ->> DubboProtocol: createServer()
+DubboProtocol ->> Exchangers:bind()
+Exchangers ->> HeaderExchanger:bind()
+HeaderExchanger ->> Transporters:bind()
+Note right of Transporters:take NettyTransporter for example
+Transporters ->> NettyTransporter:bind()
+NettyTransporter -->> Transporters:NettyServer
+Transporters -->> HeaderExchanger:NettyServer
+HeaderExchanger -->> Exchangers:NettyServer
+Exchangers -->> DubboProtocol:NettyServer
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODgwMzE5MDZdfQ==
+eyJoaXN0b3J5IjpbLTEyOTUxNjc3NzBdfQ==
 -->
