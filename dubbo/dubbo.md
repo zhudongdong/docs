@@ -153,6 +153,11 @@ RegistryProtocol->>Registry&Adaptive:subscribe()
 RegistryProtocol-->>ServiceConfig:exporter
 
 ```
+
+
+----------
+
+
 DubboProtocol.export过程
 
 ```mermaid
@@ -198,5 +203,5 @@ Exchangers -->> DubboProtocol:NettyServer
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5MzYwNDM2N119
+eyJoaXN0b3J5IjpbMjAyMTE2ODY5NV19
 -->
