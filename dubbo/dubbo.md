@@ -218,11 +218,11 @@ D-->E{isInJVM?}
 E--YES-->F(InJvmProtocol.refer)
 F--> G(ProxyFactroy.createProxy)
 G-->H((End))
-E--NO-->I(return RegistryProtocol.refer)
+E--NO-->I(RegistryProtocol.refer)
 I-->G
 
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjEzODUzMDA0XX0=
+eyJoaXN0b3J5IjpbLTE5NjcxNTA2ODhdfQ==
 -->
