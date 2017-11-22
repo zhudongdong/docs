@@ -218,8 +218,11 @@ C-->D(build url from map)
 D-->E{isInJVM?}
 E--YES-->F(InJvmProtocol.refer)
 F--> G(ProxyFactroy.createProxy)
+G-->H((End))
+E--NO-->I(RegistryProtocol.refer)
+
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3MDI4OTEwMV19
+eyJoaXN0b3J5IjpbLTE2MzQ4NjM0NF19
 -->
