@@ -215,9 +215,10 @@ A(appendProperties) --> B(resolveFile if needed)
 B-->C(appendParameters to map)
 C-->D(build url from map)
 D-->E{isInJVM?}
-E--YES-->
+E--YES-->F(InJvmProtocol.refer)
+F--> G(ProxyFactroy.createProxy)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2MzcwNzcwNl19
+eyJoaXN0b3J5IjpbLTE4OTE1Njg2OTNdfQ==
 -->
