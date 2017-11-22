@@ -214,8 +214,10 @@ graph LR
 A(appendProperties) --> B(resolveFile if needed) 
 B-->C(appendParameters to map)
 C-->D(build url from map)
+D-->E{isInJVM?}
+E--YES-->
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NjAxMzYzNF19
+eyJoaXN0b3J5IjpbMTc2MzcwNzcwNl19
 -->
