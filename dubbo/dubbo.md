@@ -145,7 +145,8 @@ wrapper按照配置文件中定义，层层嵌套（没有循序），以Protoco
 sequenceDiagram
 ServiceConfig ->> RegistryProtocol: export
 RegistryProtocol->>Protocol$Adaptive: export
-Protocol$Adaptive--x Alice: I am good thanks!
+Protocol$Adaptive->> DubboProtocol: export
+DubboProtocol-->> Protocol$Adaptive:exporter
 Bob-x John: I am good thanks!
 Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
 
@@ -182,5 +183,5 @@ Alice->John: Yes... John, how are you?
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ4NjE3NTMyXX0=
+eyJoaXN0b3J5IjpbMTE1NDg2ODE2Nl19
 -->
