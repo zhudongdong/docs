@@ -48,7 +48,7 @@ failover=com.alibaba.dubbo.rpc.cluster.support.FailoverCluster
 
 
 ## @Adaptive
->- 类级别：dubbo通过spi机制加载AdaptiveExtension，参见[spi机制](spi机制)
+>- 类级别：dubbo通过spi机制加载AdaptiveExtension，参见[spi机制](#spi机制)
 
 >- 方法级别：如果某接口中的任意方法标记了@Adaptive,dubbo会为该接口创建一个代理类 ，类名xxx$Adaptive，该类用来在运行时为@Adaptive方法提供动态适配的功能
 
@@ -206,5 +206,5 @@ Exchangers -->> DubboProtocol:NettyServer
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzkzMTM1MTldfQ==
+eyJoaXN0b3J5IjpbMjA2OTY4NjU5MF19
 -->
