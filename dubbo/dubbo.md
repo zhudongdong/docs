@@ -1,4 +1,5 @@
 
+
 # dubbo extension
 ## ExtensionLoader《T》 
 >- 每个T类型对应一个ExtensionLoader，同时缓存在EXTENSION_LOADERS中.
@@ -169,5 +170,5 @@ wrapper按照配置文件中定义，层层嵌套（没有循序），以Protoco
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNTMxNzg4XX0=
+eyJoaXN0b3J5IjpbNTg0MDM1OTEwXX0=
 -->
