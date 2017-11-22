@@ -143,7 +143,20 @@ wrapper按照配置文件中定义，层层嵌套（没有循序），以Protoco
 
 ```mermaid
 sequenceDiagram
-ServiceConfig ->> RegistryProtocol: export
+ServiceConfig ->> RegistryProtocol: export()
+RegistryProtocol->>Protocol$Adaptive: export()
+Protocol$Adaptive->> DubboProtocol: export()
+DubboProtocol-->> Protocol$Adaptive:exporter
+Protocol$Adaptive-->> RegistryProtocol:exporter
+RegistryProtocol->>Registry&Adaptive:register()
+RegistryProtocol->>Registry&Adaptive:subscribe()
+RegistryProtocol->>ServiceConfig:exporter
+
+```
+
+```mermaid
+sequenceDiagram
+DubboProtocol ->> DubboProtocol: openServer()
 RegistryProtocol->>Protocol$Adaptive: export
 Protocol$Adaptive->> DubboProtocol: export
 DubboProtocol-->> Protocol$Adaptive:exporter
@@ -183,5 +196,5 @@ RegistryProtocol->>ServiceConfig:exporter
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5NTEyNTEyM119
+eyJoaXN0b3J5IjpbLTEzNzIwNjkzNTldfQ==
 -->
