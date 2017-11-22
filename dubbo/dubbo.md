@@ -160,7 +160,9 @@ DubboProtocol ->> DubboProtocol: createServer()
 DubboProtocol ->> Exchangers:bind()
 Exchangers ->> HeaderExchanger:bind()
 HeaderExchanger ->> Transporters:bind()
-Note right of HeaderExchanger:dd
+Note right of Transporters:take NettyTransporter for example
+Transporters ->> NettyTransporter:bind()
+NettyTransporter -->> Transporters:NettyServer
 ```
 
 >- ServiceConfig.doExportUrlsFor1Protocol
@@ -192,5 +194,5 @@ Note right of HeaderExchanger:dd
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwMDI4ODgzN119
+eyJoaXN0b3J5IjpbLTg1MjY0NzA2MF19
 -->
