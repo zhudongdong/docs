@@ -141,6 +141,10 @@ wrapper按照配置文件中定义，层层嵌套（没有循序），以Protoco
 
 # dubbo export
 
+整体链路
+----------
+
+
 ```mermaid
 sequenceDiagram
 ServiceConfig ->> RegistryProtocol: export()
@@ -154,11 +158,10 @@ RegistryProtocol-->>ServiceConfig:exporter
 
 ```
 
-
+DubboProtocol.export过程
 ----------
 
 
-DubboProtocol.export过程
 
 ```mermaid
 sequenceDiagram
@@ -203,5 +206,5 @@ Exchangers -->> DubboProtocol:NettyServer
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMTE2ODY5NV19
+eyJoaXN0b3J5IjpbLTE3NzkzMTM1MTldfQ==
 -->
