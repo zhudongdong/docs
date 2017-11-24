@@ -126,6 +126,7 @@ wrapper按照配置文件中定义，层层嵌套（没有循序），以Protoco
 
 
 ##  extension的注入
+extension依赖的T都是注入的T$Adaptive类型
 
 ## 一个完整的extension创建过程
 >- 通过spi机制加载配置文件中所有的extension
@@ -227,5 +228,5 @@ I-->G
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNDc4NDg1Nl19
+eyJoaXN0b3J5IjpbNTUwNzI2ODM1XX0=
 -->
