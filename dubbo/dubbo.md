@@ -5,7 +5,9 @@
 >- 每个T类型对应一个ExtensionLoader，同时缓存在EXTENSION_LOADERS中.
 
 >- 每个ExtensionLoad\<T>中包含:
->>- 
+>>- Extension*，name唯一
+>>- 一个AdaptiveExtension
+>>- ActivateExtension
 
 >- 该ExtensionLoader通过spi机制加载该T类型对应的所有extension，spi机制如下
 
@@ -233,5 +235,5 @@ I-->G
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ4NTEyMjMwXX0=
+eyJoaXN0b3J5IjpbOTMzNDkwOTAwXX0=
 -->
