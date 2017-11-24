@@ -5,7 +5,7 @@
 >- 每个T类型对应一个ExtensionLoader，同时缓存在EXTENSION_LOADERS中.
 
 >- 每个ExtensionLoad\<T>中包含:
->>- Extension*，name唯一
+>>- Extension*，\<name,Extension> pair
 >>- 一个AdaptiveExtension
 >>- ActivateExtension*
 
@@ -235,5 +235,5 @@ I-->G
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjYxODY1Mjg2XX0=
+eyJoaXN0b3J5IjpbLTY2OTE0MDAxMF19
 -->
