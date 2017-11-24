@@ -135,6 +135,9 @@ extension依赖的T都是注入的T$Adaptive类型
 
 >>- class.newInstance
 
+>>- injectExtension
+
+
 >>- 获取所有的wrapperClasses
 
 >>- 通过wrapper机制包装extension instance
@@ -228,5 +231,5 @@ I-->G
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUwNzI2ODM1XX0=
+eyJoaXN0b3J5IjpbOTk0NjI4MDg2XX0=
 -->
