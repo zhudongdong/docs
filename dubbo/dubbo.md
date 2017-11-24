@@ -124,6 +124,9 @@ wrapper按照配置文件中定义，层层嵌套（没有循序），以Protoco
 
 >- 6、返回ProtocolListenerWrapper实例
 
+
+##  extension的注入
+
 ## 一个完整的extension创建过程
 >- 通过spi机制加载配置文件中所有的extension
 
@@ -224,5 +227,5 @@ I-->G
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjcxNTA2ODhdfQ==
+eyJoaXN0b3J5IjpbLTMxNDc4NDg1Nl19
 -->
