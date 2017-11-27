@@ -112,7 +112,26 @@ public class Protocol$Adaptive implements com.alibaba.dubbo.rpc.Protocol {
 
 
 ## @Activate
-通过指定key，group来选择满足条件的extension。加载逻辑没看懂。
+通过指定key，group来选择满足条件的extension。判断一个url是否能够激活对应的extension逻辑如下：
+```java
+private boolean isActive(Activate activate, URL url) {
+        String[] keys = activate.value();
+        if (keys == null || keys.length == 0) {
+            return true;
+        }
+        for (String key : keys) {//任意一个key满足条件即可
+            for (Map.Entry<String, String> entry : url.getParameters().entrySet()) {
+                String k = entry.getKey();
+                String v = entry.getValue();
+                if ((k.equals(key) || k.endsWith("." + key))
+                        && ConfigUtils.isNotEmpty(v)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+```
 
 ## wrapper
 wrapper的是用来在原生接口类型T的extension上面进行包装，成为wrapper需要满足以下条件：
@@ -243,5 +262,5 @@ I-->G
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyNjkwNTExMl19
+eyJoaXN0b3J5IjpbMTExOTExMTA2MF19
 -->
