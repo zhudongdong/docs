@@ -49,7 +49,7 @@ public interface Cluster {
 failover=com.alibaba.dubbo.rpc.cluster.support.FailoverCluster
 ```
 
->- 如果类型T扩展点中有加@Adaptive注解的，将其缓存，作为T类型的AdaptiveExtension，否则会通过字节码的方式新增一个T$Adaptive作为T的AdaptiveExtension，并且AdaptiveExtension只能有一个，@Adaptive作用如下
+>- 如果类型T扩展点中有加@Adaptive注解的，将其缓存，作为T类型默认的extension，否则会通过字节码的方式新增一个T$Adaptive作为T的AdaptiveExtension，并且AdaptiveExtension只能有一个，@Adaptive作用如下
 
 
 ## @Adaptive
@@ -262,5 +262,5 @@ I-->G
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzUzOTQ1M119
+eyJoaXN0b3J5IjpbMTg3MDExMDUzM119
 -->
