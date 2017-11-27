@@ -58,6 +58,7 @@ failover=com.alibaba.dubbo.rpc.cluster.support.FailoverCluster
 >- 方法级别：如果某接口中的任意方法标记了@Adaptive,dubbo会为该接口创建一个代理类 ，类名xxx$Adaptive，该类用来在运行时为@Adaptive方法提供动态适配的功能。适配策略如下：
 >>- 如果@SPI内加了参数，那么该参数作为defaultExtName，如果方法上@Adaptive内的参数为空，那么将使用defaultExtName来获取对应的extension
 ```java
+String[] value = adaptiveAnnotation.value();
 String defaultExtName = cachedDefaultName;
 ...
 // 
@@ -243,5 +244,5 @@ I-->G
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1MjAyNzU4OV19
+eyJoaXN0b3J5IjpbLTcyMzU1ODE5OF19
 -->
