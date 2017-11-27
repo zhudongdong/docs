@@ -120,7 +120,7 @@ private boolean isActive(Activate activate, URL url) {
             return true;
         }
         for (String key : keys) {//任意一个key满足条件即可
-            for (Map.Entry<String, String> entry : url.getParameters().entrySet()) {
+            for (Map.Entry<String, String> entry : url.getParameters().entrySet()) {//url中re
                 String k = entry.getKey();
                 String v = entry.getValue();
                 if ((k.equals(key) || k.endsWith("." + key))
@@ -262,5 +262,5 @@ I-->G
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExOTExMTA2MF19
+eyJoaXN0b3J5IjpbLTEyNzUzOTQ1M119
 -->
