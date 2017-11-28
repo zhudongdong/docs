@@ -264,7 +264,7 @@ I-->G
 
 ## dubbo的一些问题
 
-1、url.getMethodParameter（methodName,key）d
+1、url.getMethodParameter（methodName,key）zhi
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3Nzg0NDgwNV19
+eyJoaXN0b3J5IjpbLTQzMzg0NjQ1MF19
 -->
