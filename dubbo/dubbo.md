@@ -264,7 +264,7 @@ I-->G
 
 ## dubbo的一些问题
 
-1、url.getMethodParameter（methodName,key）只能通过方法名和key来获取参数值，但是如果接口中有重载的方法，那么这些方法中只要有任意一个声明了诸如filter的
+1、url.getMethodParameter（methodName,key）只能通过方法名和key来获取参数值，但是如果接口中有重载的方法，那么这些方法中只要有任意一个声明了诸如filter的参数后，其他重载方法也会生效。原因就是并未在方法参数层面做区分。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUwNDI1MTA4XX0=
+eyJoaXN0b3J5IjpbLTE2NDc3MjQ2MDldfQ==
 -->
