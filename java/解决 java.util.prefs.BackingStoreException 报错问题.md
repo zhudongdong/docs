@@ -1,7 +1,7 @@
 # 解决 java.util.prefs.BackingStoreException 报错问题
 
 
-今天应用持续报错，异常信息如下：
+今天应用持续如下异常信息：
 
 ```java
 WARNING: Could not lock System prefs. Unix error code 7.
@@ -20,5 +20,5 @@ Nov 28, 2017 8:57:08 AM java.util.prefs.FileSystemPreferences checkLockFile0Erro
 >- 3、删除/etc/.java 目录或
 >- 4、使用root启动或
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDAzMzM1MjFdfQ==
+eyJoaXN0b3J5IjpbLTgyOTcyODQzN119
 -->
