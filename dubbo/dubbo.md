@@ -286,7 +286,7 @@ public interface DemoService {
 
 }
 ```
-以上例子中，在Dem
+以上例子中，在DemoService的sayHello方法上面声明sh
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0NDYwMDMyNF19
+eyJoaXN0b3J5IjpbLTEwNjMyOTgwXX0=
 -->
