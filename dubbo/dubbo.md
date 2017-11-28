@@ -264,7 +264,7 @@ I-->G
 
 ## dubbo的一些问题
 
-1、url.getMethodParameter（methodName,key）zhi
+1、url.getMethodParameter（methodName,key）只能通过方法名和key来获取参数值，但是如果jiekouzh
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzMzg0NjQ1MF19
+eyJoaXN0b3J5IjpbMTUzMzU1ODA5N119
 -->
