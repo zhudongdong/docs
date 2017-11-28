@@ -286,7 +286,7 @@ public interface DemoService {
 
 }
 ```
-以上例子中，在DemoService的sayHello方法上面声明sh
+以上例子中，在DemoService的sayHello方法上面声明使用熔断器fuse=
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjMyOTgwXX0=
+eyJoaXN0b3J5IjpbLTEwNDAyMDY5XX0=
 -->
