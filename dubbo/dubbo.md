@@ -272,6 +272,21 @@ I-->G
         <dubbo:method name="sayHello" fuse="hystrix" ></dubbo:method>
 </dubbo:reference>
 ```
+DemoService:
+```java
+package com.alibaba.dubbo.demo;
+
+public interface DemoService {
+
+    String sayHello(String name);
+
+    String sayHello1(String name);
+
+    String sayHello(String name, String world);//重载
+
+}
+```
+yishang
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMDYwNDY2XX0=
+eyJoaXN0b3J5IjpbMTc4NDI4NTE3NF19
 -->
