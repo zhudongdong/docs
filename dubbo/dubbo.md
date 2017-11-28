@@ -262,14 +262,9 @@ I-->G
 
 ```
 
-## 对dubbo理解的一些大白话
+## dubbo的一些问题
 
-### 微内核扩展
-核心SPI机制，主要包含几个关键点
->- @SPI（"defaultExtension"）
-invoker是整个dubbo的核心，而贯穿整个dubbo调用链的上下文参数都放在URL里面。
-
-通过Adaptive的方式来扩展
+1、url.getMethodParameter（methodName,key）d
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NzcxMjc0NV19
+eyJoaXN0b3J5IjpbMjA3Nzg0NDgwNV19
 -->
