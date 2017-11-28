@@ -261,6 +261,9 @@ I-->G
 
 
 ```
+
+## 对dubbo理解的一些大白话
+invoker是整个dubbo的核心，而贯穿整个dubbo调用链的上下文参数都放在URL里面。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjc2MTgxNDldfQ==
+eyJoaXN0b3J5IjpbMTcyMDM3OTgwNF19
 -->
