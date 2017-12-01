@@ -289,6 +289,9 @@ public interface DemoService {
 DemoService.sayHello有两个重载方法。
 
 在DemoService的sayHello方法上面声明使用熔断器fuse=hystrix，但是无法区分是哪一个，所以两个方法都会使用fuse=hystrix
+
+2、SpringConfig加载问题
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyNzc5Nzk1Nl19
+eyJoaXN0b3J5IjpbLTM2MDY1ODEwM119
 -->
