@@ -290,8 +290,9 @@ DemoService.sayHello有两个重载方法。
 
 在DemoService的sayHello方法上面声明使用熔断器fuse=hystrix，但是无法区分是哪一个，所以两个方法都会使用fuse=hystrix
 
-2、SpringConfig加载问题
+2、Spring加载顺序问题
+afterPropertiesSet和getObject方法的调用顺序不确定
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2MDY1ODEwM119
+eyJoaXN0b3J5IjpbMjYwMjI4NDk3XX0=
 -->
