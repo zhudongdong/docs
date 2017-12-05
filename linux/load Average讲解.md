@@ -17,13 +17,18 @@ linux系统是5秒钟进行一次Load采样
 ---
 
 ### 二、load average值的含义
-————————————
 
-|task|task|task|task|task|
+#### 2.1 单核
+
+—————————————
+
+|task|task|task|task|task|                          load=1
  
-————————————
+—————————————
 
 ------
+
+#### 2.2多核
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwODUyMTg1OF19
+eyJoaXN0b3J5IjpbMTQ4NTc5OTE4NF19
 -->
