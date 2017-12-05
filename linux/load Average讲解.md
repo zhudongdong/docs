@@ -30,10 +30,10 @@ linux系统是5秒钟进行一次Load采样
 >- 1、任务数<5  那么load < 1
 >- 2、任务数=5  那么load = 1
 >- 3、任务数>5  那么load > 1
->- 1、5<任务数<10  那么load < 2
->- 2、任务数=10  那么load = 2
->- 3、任务数>10  那么load > 2
+>- 4、5<任务数<10  那么load < 2
+>- 5、任务数=10  那么load = 2
+>- 6、任务数>10  那么load > 2
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5Nzk0MjE5Ml19
+eyJoaXN0b3J5IjpbMTg2MjM1NjY5MV19
 -->
