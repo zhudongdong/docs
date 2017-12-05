@@ -20,35 +20,12 @@ linux系统是5秒钟进行一次Load采样
 
 #### 2.1 单核
 简单来说，假设cpu任务队列大小为5，如果:
->- 1、任务数<5  load < 1
->- 2、任务数=5  load = 1
->- 3、任务数>5  load > 1
-
-—————————————
-
-|task|task|task|                                        load<1
- 
-—————————————
+>- 1、任务数<5  那么load < 1
+>- 2、任务数=5  那么load = 1
+>- 3、任务数>5  那么load > 1
 
 
-—————————————
-
-|task|task|task|task|task|                          load=1
- 
-—————————————
-
-
-—————————————
-
-|task|task|task|task|task|task|task|task|                          load>1
- 
-—————————————
-
-
-
-------
-
-#### 2.2多核
+#### 2.2 多核
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3OTE1NzkzN119
+eyJoaXN0b3J5IjpbNTkzNzMxOThdfQ==
 -->
