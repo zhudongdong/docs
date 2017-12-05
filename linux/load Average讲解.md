@@ -16,6 +16,12 @@ linux系统是5秒钟进行一次Load采样
 
 ---
 
+### 二、load average值的含义
+————————————
+|task|task|task| 
+————————————
+
+------
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTUzNTU2MDRdfQ==
+eyJoaXN0b3J5IjpbODE0NjQyODc4XX0=
 -->
