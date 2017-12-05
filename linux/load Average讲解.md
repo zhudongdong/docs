@@ -26,6 +26,7 @@ linux系统是5秒钟进行一次Load采样
 
 
 #### 2.2 多核
+简单来说，如果cpu=2，
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkzNzMxOThdfQ==
+eyJoaXN0b3J5IjpbNzk0MjM5NTI3XX0=
 -->
