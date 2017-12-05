@@ -26,7 +26,14 @@ linux系统是5秒钟进行一次Load采样
 
 
 #### 2.2 多核
-简单来说，如假设cpu=2，
+简单来说，假设cpu=2，任务队列大小=5，如果：
+>- 1、任务数<5  那么load < 1
+>- 2、任务数=5  那么load = 1
+>- 3、任务数>5  那么load > 1
+>- 1、5<任务数<10  那么load < 2
+>- 2、任务数=10  那么load = 2
+>- 3、任务数>10  那么load > 2
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTQ1MDQzMjRdfQ==
+eyJoaXN0b3J5IjpbMTg5Nzk0MjE5Ml19
 -->
