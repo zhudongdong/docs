@@ -19,10 +19,14 @@ linux系统是5秒钟进行一次Load采样
 ### 二、load average值的含义
 
 #### 2.1 单核
+简单来说，假设cpu任务队列大小为5，如果:
+>- 1、任务数<5  load < 1
+>- 2、任务数=5  load = 1
+>- 3、任务数>
 
 —————————————
 
-|task|task|task|                          load<1
+|task|task|task|                                        load<1
  
 —————————————
 
@@ -46,5 +50,5 @@ linux系统是5秒钟进行一次Load采样
 
 #### 2.2多核
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTI3NTk3MjFdfQ==
+eyJoaXN0b3J5IjpbMTgxMTU4ODA4M119
 -->
