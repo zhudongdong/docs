@@ -19,7 +19,7 @@ linux系统是5秒钟进行一次Load采样
 ### 二、load average值的含义
 
 #### 2.1 单核
-任务队列，qu
+任务队列
 —————————————
 
 |task|task|task|                          load<1
@@ -47,5 +47,5 @@ linux系统是5秒钟进行一次Load采样
 
 #### 2.2多核
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDU1OTQwODddfQ==
+eyJoaXN0b3J5IjpbNTYzOTU3MTMxXX0=
 -->
