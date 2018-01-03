@@ -34,8 +34,14 @@
 
 > cat /proc/sys/fs/file-nr 
 ```shell
-
+[wlogs@yy-t-lec-war ~]$ cat /proc/sys/fs/file-nr
+416     0       188453
 ```
+>>- 第一个数字：当前打开的文件句柄数
+
+>>- 第二个数字：
+
+
 
 ulimit is a per process limit and you can increase or decrease it. Also the /proc/sys/fs/file-max tells the maximum open file descriptors allowed by the kernel. 
 
@@ -43,5 +49,5 @@ Ok now if you see /proc/sys/fs/file-nr, the first column show number of current 
 e.g. echo "12227" > /proc/sys/fs/file-max.
 I think it is much clear now.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2NjYwNjA2Nl19
+eyJoaXN0b3J5IjpbLTIwNjc2MTIwOTldfQ==
 -->
