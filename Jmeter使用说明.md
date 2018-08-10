@@ -45,12 +45,16 @@
 ## Jmeter测试http url
 >- 1、新建测试计划
 >- 2、右键点击```线程组```>```添加```>```Sampler```>```HTTP请求```
->- 2、.1、填写ip
->- 2.2
+>- 2.1、填写ip、端口号
+>- 2.2、Implementation HttpClient4
+>- 2.3、填写方法
+>- 2.4、填写路径
+>- 2.5、填写请求参数
 >- 3、如果是post json 需要添加信息头。右键点击```HTTP请求```>```添加```>``` ```>```HTTP请求信息头管理器```
 >- 3.1、添加信息头：名称-```Content-Type```，值-```application/json```
->
+>- 4、运行
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTM1Nzk4MzAsMTkyMzM5MzE1OF19
+eyJoaXN0b3J5IjpbLTExMzk5NTg3NjEsLTE2OTM1Nzk4MzAsMT
+kyMzM5MzE1OF19
 -->
