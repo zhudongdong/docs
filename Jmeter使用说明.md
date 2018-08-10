@@ -41,6 +41,12 @@
 >- 2、保证测试逻辑单一而非复杂
 >- 3、避免测试方法之间的依赖
 >- 4、如果选择了类之后，没有出现任何方法，那很有可能是测试代码在实例化的时候出错了，在构造方法中打印System.out查看。
+
+## Jmeter测试http url
+>- 1、新建测试计划
+>- 2、右键点击```线程组```>```添加```>```Sampler```>```HTTP请求```
+>- 2、右键点击```HTTP请求```>```添加```>``````>```HTTP请求```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTU1MDQ0NjFdfQ==
+eyJoaXN0b3J5IjpbMTkyMzM5MzE1OF19
 -->
