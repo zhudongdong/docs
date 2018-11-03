@@ -35,5 +35,5 @@ linux系统是5秒钟进行一次Load采样
 >- 6、任务数>10  那么load > 2
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2MjM1NjY5MV19
+eyJoaXN0b3J5IjpbMzE5NjQ2NjYsMTg2MjM1NjY5MV19
 -->
