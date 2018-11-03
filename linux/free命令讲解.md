@@ -52,5 +52,5 @@ swap 是实现虚拟内存的重要概念。如果系统的负载太大，内存
 
 swap 可以再逻辑上扩大内存空间，但是会造成系统变慢，因为硬盘读写速度很慢。linux 系统比较智能，会把那些不怎么频繁使用的内存放到 swap。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjA1NDIwNV19
+eyJoaXN0b3J5IjpbMTQ1NzM1Njc2NiwtMjEyMDU0MjA1XX0=
 -->
