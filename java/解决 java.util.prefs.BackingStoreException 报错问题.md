@@ -20,5 +20,5 @@ Nov 28, 2017 8:57:08 AM java.util.prefs.FileSystemPreferences checkLockFile0Erro
 >- 3、删除/etc/.java 目录或
 >- 4、使用root启动或
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyOTcyODQzN119
+eyJoaXN0b3J5IjpbLTc2ODEwNzM2MiwtODI5NzI4NDM3XX0=
 -->
