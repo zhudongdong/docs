@@ -49,5 +49,6 @@ Ok now if you see /proc/sys/fs/file-nr, the first column show number of current 
 e.g. echo "12227" > /proc/sys/fs/file-max.
 I think it is much clear now.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjc2MTIwOTldfQ==
+eyJoaXN0b3J5IjpbLTE1ODYwMjA4MzYsLTIwNjc2MTIwOTldfQ
+==
 -->
